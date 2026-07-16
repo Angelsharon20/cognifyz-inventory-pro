@@ -2,17 +2,13 @@
 # Cognifyz Inventory Pro - Environment Configuration
 # =========================================================
 
-# The port your Express server will listen on.
 PORT=5000
 
-# Your MongoDB Atlas connection string
-MONGO_URI=mongodb+srv://angelsharon_db_user:dGshsmraa5zVq5wZ@cluster0.uhv6o5x.mongodb.net/cognifyzInventory?retryWrites=true&w=majority&appName=Cluster0
+MONGO_URI=mongodb://angelsharon_db_user:dGshsmraa5zVq5wZ@ac-hqjhjty-shard-00-00.uhv6o5x.mongodb.net:27017,ac-hqjhjty-shard-00-01.uhv6o5x.mongodb.net:27017,ac-hqjhjty-shard-00-02.uhv6o5x.mongodb.net:27017/cognifyzInventory?ssl=true&replicaSet=atlas-o1de0j-shard-0&authSource=admin&retryWrites=true&w=majority
 
-# Secret used to sign JSON Web Tokens
 JWT_SECRET=2952288c8af6b8eb6605398888e52ace386d9a55987b17cf59cda574cb83aecb
 
-# How long issued JWTs remain valid
 JWT_EXPIRES_IN=7d
 
-# Node environment
 NODE_ENV=development
+
